@@ -1,0 +1,90 @@
+body{
+    width: 66%;
+    min-width: 960px;
+    margin:auto;
+}
+
+ul{
+    list-style: none;
+    padding-left: 0;
+    border: 2px solid black;
+   
+}
+.input_name{
+    width:27.3%;
+}
+.add_user h3{
+    text-align: center;
+}
+.add_user button{
+    background-color: green;
+    color:white;
+}
+.add_user{
+    border: 2px solid black;
+    margin: 2% 0;
+    padding:0 1vh;
+}
+.comments{
+    display: flex;
+    text-align: center;
+    
+}
+.input_comment{
+    width:40%;
+    border:2px solid black;
+    margin-right :1vw;
+    padding:1vh 2vw;
+
+}
+.input_comment select{
+    display: block;
+}
+.input_comment button{
+    display: block;
+}
+textarea{
+    display: block;
+    margin:3vh 0;
+}
+.comment_list{
+    border:2px solid black;
+    display:inline-block;
+    padding:1vh 2vw;
+    height: 400px;
+    overflow: scroll;
+}
+.comment_block{
+    border:2px solid black;
+    padding:0 1vw;
+    text-align:left;
+}
+.upper_part{
+    display: flex;
+    color:green;
+    
+}
+.upper_part p{
+    text-decoration:underline;
+}
+.upper_part button{
+    display:block;
+    border-radius: 50%;
+    width:25px;
+    height: 25px;
+    margin-top: 1%;
+    background-color:red;
+    border:2px black solid; 
+    color:white;
+    font-weight: bold;
+}
+
+.after_part button{
+    background-color:transparent;
+    border:none;
+    color:blue;
+    position: relative;
+    right: -80%;
+    
+    
+}

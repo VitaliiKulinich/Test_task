@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <title>Add users</title>
+</head>
+<body>
+    <div class="add_user">
+        <h3>Добавление пользователей</h3>
+        <div class="input_name">
+            <form method="post" enctype="multipart/form-data" action="/">
+                {% csrf_token %}
+                <input id="user" type="text" name="user" minlength="1" placeholder="Имя пользователя">
+                <button>Добавить</button>
+            </form>
+            <ul>
+                <li>{% user %}</li>
+
+            </ul>
+        </div>
+
+        <div class="users_list"></div>
+    </div>
+    <div class="comments">
+        <div class="input_comment">
+            <h3>Добавить коментарий</h3>
+            <select name="" id="" >
+                <option >Выберите пользователя</option>
+                
+            </select>
+            <textarea name="" id="input_text" cols="30" rows="10" placeholder="Ваш коментарий"></textarea>
+            <button class="enter_comment" onclick="enter_comment()">Отправить</button>
+        </div>
+        
+        <div class="comment_list" id="comment_list">
+            <h3>Добавленые коментарии</h3>
+            <div class="comment_block">
+                <div class="upper_part">
+                    <p class="user_data">Vladimir Pupkin (2020-01-23 13:33)(для каждого разное)</p>
+                    <button>x</button>
+                </div>
+                <div class="after_part">
+                    <p class="text">Тут должен быть текст статьи </p>
+                    <button>Ответить</button>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>
